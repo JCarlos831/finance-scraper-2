@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-FinanceScraper-749D2335-5A1D-4E3D-A07F-BA9A16FA72E2</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="app.db" CopyToOutputDirectory="PreserveNewest"/>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.1.1"/>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1"/>
+    <PackageReference Include="Selenium.Support" Version="3.13.1"/>
+    <PackageReference Include="Selenium.WebDriver" Version="3.13.1"/>
+    <PackageReference Include="Selenium.Firefox.WebDriver" Version="0.21.0"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3"/>
+  </ItemGroup>
+</Project>
