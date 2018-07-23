@@ -284,7 +284,7 @@ using FinanceScraper.Models;
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(2090, 54, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "20746ca4a8624ae88d4b4844a5e7ca54", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "514a8e99c00745168ad91c9c4002b0ab", async() => {
                 BeginContext(2136, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -319,7 +319,7 @@ using FinanceScraper.Models;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(2152, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7648322cc42743708c7c2f0f3d6be9fa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2f013e8dee764810b44ea6a371eff4d1", async() => {
                 BeginContext(2174, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();

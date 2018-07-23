@@ -19,9 +19,16 @@ namespace FinanceScraper.Controllers
         }
 
         // GET: Stocks
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Stock.ToListAsync());
+            var stocks = from s in _context.Stock
+                         select s;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                stocks = stocks.Where(s => s.Symbol.Contains(searchString));
+            }
+            return View(await stocks.ToListAsync());
         }
 
         // GET: Stocks/Details/5
