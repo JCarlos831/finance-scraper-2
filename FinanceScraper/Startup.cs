@@ -36,10 +36,16 @@ namespace FinanceScraper
             });
 
             services.AddDbContext<StockContext>(options =>
+                options.UseSqlite("Data Source=Stock.db"));
+            //         Configuration.GetConnectionString("DefaultConnection")));
+            // services.AddDefaultIdentity<IdentityUser>()
+            //     .AddEntityFrameworkStores<StockContext>();
+
+            services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlite(
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>()
-                .AddEntityFrameworkStores<StockContext>();
+                .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
