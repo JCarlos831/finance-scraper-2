@@ -68,7 +68,7 @@ namespace FinanceScraper
             driver.FindElement(By.XPath("/html/body/div[2]/div[3]/section/section/div[2]/table/tbody/tr[1]/td[1]/a")).Click();
 
             // Path to write data to
-            string path = @"/Users/JuanCMontoya/Desktop/testScrape.csv";
+            string path = @"/Users/JuanCMontoya/Desktop/testScrape" + DateTime.Now.ToString("yyyyMMddHHmmssfff") + ".csv";
 
             // If element cannot be found in three seconds, timeout.
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(3);
